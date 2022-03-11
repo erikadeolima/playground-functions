@@ -5,21 +5,30 @@ function compareTrue(valor1, valor2) {
 // console.log(compareTrue(false,true));
 // console.log(compareTrue(false,false));
 // console.log(compareTrue(true,true));
-  
+
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, heigth) {
+  return (base * heigth) / 2;
 }
+// console.log(calcArea(10,50));
+// console.log(calcArea(5,2));
+// console.log(calcArea(51,1));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  return string.split(' ');
 }
+// console.log(splitSentence("go Trybe"));
+// console.log(splitSentence("vamo que vamo"));
+// console.log(splitSentence("foguete"));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(string = []) {
+  return (`${string[string.length - 1]}, ${string[0]}`);
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints() {
