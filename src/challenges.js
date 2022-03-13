@@ -31,14 +31,26 @@ function concatName(string = []) {
 // console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return ((wins * 3) + (ties * 1));
 }
+// console.log(footballPoints(14, 8));
+// console.log(footballPoints(1, 2));
+// console.log(footballPoints(0, 0));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  let result = [];
+  for (let i = 0; i < array.length; i + 1) {
+    if (array[i] === Math.max(array)) {
+      result.push();
+    }
+  }
+  return (result);
 }
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse() {
