@@ -26,9 +26,9 @@ function splitSentence(string) {
 function concatName(string = []) {
   return (`${string[string.length - 1]}, ${string[0]}`);
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-console.log(concatName(['foguete', 'não', 'tem', 'ré']));
-console.log(concatName(['captain', 'my', 'captain']));
+// console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+// console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+// console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints() {
