@@ -23,8 +23,8 @@ function splitSentence(string) {
 // console.log(splitSentence("foguete"));
 
 // Desafio 4
-function concatName(string = []) {
-  return (`${string[string.length - 1]}, ${string[0]}`);
+function concatName(string2 = []) {
+  return (`${string2[string2.length - 1]}, ${string[0]}`);
 }
 // console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 // console.log(concatName(['foguete', 'não', 'tem', 'ré']));
@@ -42,7 +42,7 @@ function footballPoints(wins, ties) {
 function highestCount(array) {
   let maior = Math.max.apply(...arguments, array);
   let result = [];
-  for (d=0;d<array.length;d++) {
+  for (d=0;d<array.length;d+=1) {
     if (array[d] == maior){
       result.push(0);
     }
@@ -59,10 +59,24 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array2) {
+  let result2 = []
+  for (n=0;array2.length;d+=1) {
+    if (array2[n] ==% 3){
+      result2[n] = 'fizz';
+    } else if (array2 ==% 5) {
+      result2[n] ==% 5) {
+        result2[n] = 'buzz';
+      } else if (array2 ==% 3&&5){
+        result2[n] = 'fizzBuzz';
+      } else {
+        result2[n] = 'bug!'
+      }
+    }
+  }
+  return(resul2);
 }
-
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9
 function encode() {
   // seu código aqui
