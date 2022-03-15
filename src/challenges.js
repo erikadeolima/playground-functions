@@ -24,7 +24,8 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(string2 = []) {
-  return (`${string2[string2.length - 1]}, ${string2[0]}`);
+  // eslint-disable-next-line prefer-rest-params
+  return (string2[string2.length - 1], string2[0]);
 }
 // console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 // console.log(concatName(['foguete', 'não', 'tem', 'ré']));
@@ -56,8 +57,14 @@ function highestCount(array) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  // seu código aqui
+  let distancia = [];
+  for (p=0; p < distancia; p +=1) {
+    if ()
+  }
 }
+console.log(catAndMouse(['cat1', 0, 0, 'mouse', 0, 'cat2']));
+console.log(catAndMouse(['cat1', 0, 0, 0, 0, 0, 'mouse', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cat2']));
+console.log(catAndMouse(['cat1', 0, 0, 'mouse', 0, 0, 'cat2']));
 
 // Desafio 8
 // eslint-disable-next-line sonarjs/cognitive-complexity
@@ -92,8 +99,15 @@ function decode(string3) {
 
 // Desafio 10
 function techList(tech, name) {
-  // seu código aqui
+  let techLearn = {}
+  for (o = 0; o < tech; o += 1) {
+    techLearn['tech'] = 'tech[o]',
+    techLearn['name'] = 'name'
+  }
+  return(techLearn);
 }
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
+"Lucas"));
 
 module.exports = {
   calcArea,
