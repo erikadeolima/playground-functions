@@ -57,14 +57,14 @@ function highestCount(array) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let distancia = [];
-  for (p=0; p < distancia; p +=1) {
-    if ()
-  }
+  //let distancia = [];
+  //for (p=0; p < distancia; p +=1) {
+  //  if ()
+  //}
 }
-console.log(catAndMouse(['cat1', 0, 0, 'mouse', 0, 'cat2']));
-console.log(catAndMouse(['cat1', 0, 0, 0, 0, 0, 'mouse', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cat2']));
-console.log(catAndMouse(['cat1', 0, 0, 'mouse', 0, 0, 'cat2']));
+//console.log(catAndMouse(['cat1', 0, 0, 'mouse', 0, 'cat2']));
+//console.log(catAndMouse(['cat1', 0, 0, 0, 0, 0, 'mouse', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cat2']));
+//console.log(catAndMouse(['cat1', 0, 0, 'mouse', 0, 0, 'cat2']));
 
 // Desafio 8
 // eslint-disable-next-line sonarjs/cognitive-complexity
@@ -99,10 +99,11 @@ function decode(string3) {
 
 // Desafio 10
 function techList(tech, name) {
-  let techLearn = {}
-  for (o = 0; o < tech; o += 1) {
-    techLearn['tech'] = 'tech[o]',
-    techLearn['name'] = 'name'
+  let techOrdenada = tech.sort();
+  for (let techLearn of tech) {{
+  //  techLearn['tech']='tech[o]',
+  //  techLearn['name']='name'
+  //}}
   }
   return(techLearn);
 }
