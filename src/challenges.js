@@ -24,7 +24,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(string2 = []) {
-  return (`${string2[string2.length - 1]}, ${string[0]}`);
+  return (`${string2[string2.length - 1]}, ${string2[0]}`);
 }
 // console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 // console.log(concatName(['foguete', 'não', 'tem', 'ré']));
@@ -40,10 +40,11 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(array) {
+  // eslint-disable-next-line prefer-rest-params
   let maior = Math.max.apply(...arguments, array);
   let result = [];
-  for (d=0;d<array.length;d+=1) {
-    if (array[d] == maior){
+  for (let d = 0; d < array.length; d += 1) {
+    if (array[d] === maior) {
       result.push(0);
     }
   }
@@ -59,32 +60,33 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
+// eslint-disable-next-line sonarjs/cognitive-complexity
 function fizzBuzz(array2) {
   let result2 = [];
-  for (n=0;n < array2.length;n+=1) {
-    if (array2[n]%3 === 0){
-      if (array2[n]%5 === 0){
-        result2[n] = "fizzBuzz";
+  for (let n = 0; n < array2.length; n += 1) {
+    if (array2[n] % 3 === 0) {
+      if (array2[n] % 5 === 0) {
+        result2[n] = 'fizzBuzz';
       } else {
-        result2[n] = "fizz";
+        result2[n] = 'fizz';
       }
-    } else if (array2%5 === 0) {
-        result2[n] = "buzz"; 
-      } else {
-        result2[n] = "bug!";
-      }
+    } else if (array2[n] % 5 === 0) {
+      result2[n] = 'buzz';
+    } else {
+      result2[n] = 'bug!';
     }
-  return(result2);
+  }
+  return (result2);
 }
 // console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // console.log(fizzBuzz([7, 9] ));
 // console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
+function encode(string3) {
   // seu código aqui
 }
-function decode() {
+function decode(string3) {
   // seu código aqui
 }
 
