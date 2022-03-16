@@ -14,9 +14,9 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName(string2 = []) {
-  // eslint-disable-next-line prefer-rest-params
-  return (string2[string2.length - 1], string2[0]);
+function concatName(string2) {
+  let nome =string2[string2.length - 1] + ', ' + string2[0];
+  return (nome);
 }
 
 // Desafio 5
@@ -26,7 +26,6 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(array) {
-  // eslint-disable-next-line prefer-rest-params
   let maior = Math.max.apply(...arguments, array);
   let result = [];
   for (let d = 0; d < array.length; d += 1) {
