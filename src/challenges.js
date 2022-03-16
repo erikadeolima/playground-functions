@@ -26,6 +26,7 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(array) {
+  // eslint-disable-next-line prefer-rest-params
   let maior = Math.max.apply(...arguments, array);
   let result = [];
   for (let d = 0; d < array.length; d += 1) {
@@ -37,13 +38,12 @@ function highestCount(array) {
 }
 
 // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  let distancia1= math.abs()
-
-  //let distancia = [];
-  //for (p=0; p < distancia; p +=1) {
+function catAndMouse() {
+  // let distancia1= math.abs()
+  // let distancia = [];
+  // for (p=0; p < distancia; p +=1) {
   //  if ()
-  //}
+  // }
 }
 
 // Desafio 8
@@ -66,10 +66,10 @@ function fizzBuzz(array2) {
 }
 
 // Desafio 9
-function encode(string3) {
+function encode() {
   // seu código aqui
 }
-function decode(string3) {
+function decode() {
   // seu código aqui
 }
 
