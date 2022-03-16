@@ -15,7 +15,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(string2) {
-  let nome =string2[string2.length - 1] + ', ' + string2[0];
+  let nome = string2[string2.length - 1] + ', ' + string2[0];
   return (nome);
 }
 
@@ -37,12 +37,15 @@ function highestCount(array) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // let distancia1= math.abs()
-  // let distancia = [];
-  // for (p=0; p < distancia; p +=1) {
-  //  if ()
-  // }
+function catAndMouse(mouse, cat1, cat2) {
+  let distancia1 = Math.abs(cat1 - mouse);
+  let distancia2 = Math.abs(cat2 - mouse);
+  if (distancia2 < distancia1) {
+    return ('cat2');
+  // eslint-disable-next-line no-else-return
+  } else if (distancia2 === distancia1) {
+    return ('os gatos trombam e o rato foge');
+  } else return ('cat1');
 }
 
 // Desafio 8
@@ -79,7 +82,6 @@ function techList(materias, pessoa) {
   if (materias.length === 0) {
     return ('Vazio!');
   }
-
   for (let o = 0; o < materiasOrdenada.length; o += 1) {
     saida.push({ tech: materiasOrdenada[o], name: pessoa });
   }
