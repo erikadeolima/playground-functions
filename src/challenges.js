@@ -70,38 +70,38 @@ function fizzBuzz(array2) {
 // Desafio 9
 // eslint-disable-next-line complexity
 function encode(frase) {
-  let codificada;
+  let codificada = '';
   for (let e = 0; e < frase.length; e += 1) {
     if (frase[e] === 'a') {
-      codificada.push(frase[e] = 1);
+      codificada += '1';
     } else if (frase[e] === 'e') {
-      codificada.push(frase[e] = 2);
+      codificada += '2';
     } else if (frase[e] === 'i') {
-      codificada.push(frase[e] = 3);
+      codificada += '3';
     } else if (frase[e] === 'o') {
-      codificada.push(frase[e] = 4);
+      codificada += '4';
     } else if (frase[e] === 'u') {
-      codificada.push(frase[e] = 5);
-    } codificada.push(frase[e]);
+      codificada += '5';
+    } else codificada += frase[e];
   }
   return (codificada);
 }
 
 // eslint-disable-next-line complexity
 function decode(codificada) {
-  let descodificada;
+  let descodificada = '';
   for (let e = 0; e < codificada.length; e += 1) {
-    if (codificada[e] === 'a') {
-      descodificada.push(codificada[e] = 1);
-    } else if (codificada[e] === 'e') {
-      descodificada.push(codificada[e] = 2);
-    } else if (codificada[e] === 'i') {
-      descodificada.push(codificada[e] = 3);
-    } else if (codificada[e] === 'o') {
-      descodificada.push(codificada[e] = 4);
-    } else if (codificada[e] === 'u') {
-      descodificada.push(codificada[e] = 5);
-    } descodificada.push(codificada[e]);
+    if (codificada[e] === '1') {
+      descodificada += 'a';
+    } else if (codificada[e] === '2') {
+      descodificada += 'e';
+    } else if (codificada[e] === '3') {
+      descodificada += 'i';
+    } else if (codificada[e] === '4') {
+      descodificada += 'o';
+    } else if (codificada[e] === '5') {
+      descodificada += 'u';
+    } else descodificada += codificada[e];
   }
   return (descodificada);
 }
